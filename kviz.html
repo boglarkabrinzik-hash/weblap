@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Süti Kvíz</title>
+    <link rel="stylesheet" href="projektminta2.css" />
+    <script src="quiz.js" defer></script>
+</head>
+<body class="kvizbody">
+    <header>
+        <div class="headercontainer">
+          <a href="index.html" class="logo">
+        
+            <div class="mark">ÉM</div>
+            <p>Édesmentes Cukrászda</p>
+          </a>
+          <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+          </div>
+
+        <nav>
+            <a href="index.html">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="cukraszaink.html">Cukrászaink</a>
+            <a href="rendeles.html">Rendelés</a>
+            <a href="kviz.html" class="aktiv">Kvíz</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+        </div>
+    </header>
+    <div class="containerkviz">
+        <h1>Játsz velünk és nyerj!</h1>
+        <h2>Melyik süti illik hozzád a legjobban?</h2>
+        <p>Töltsd ki a kvízt és nyerj egy sütit, amit üzletünkben beválthatsz!</p>
+        <div id="quiz"></div>
+        <button id="nextBtn">Következő</button>
+        <div id="result" class="result"></div>
+    </div>
+<script>
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.querySelector("nav").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

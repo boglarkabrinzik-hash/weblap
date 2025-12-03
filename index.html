@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Édesmentes Cukrászda — Gluténmentes finomságok </title>
+  <meta name="description" content="Édesmentes Cukrászda — cukormentes és alacsony szénhidráttartalmú sütemények, friss alapanyagokból. Rendelés, menü, nyitvatartás és kapcsolat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projektminta2.css">
+  <script src="termekek.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body class="rolunkbody">
+    <header>
+        <div class="headercontainer">
+          <a href="index.html" class="logo">
+        
+            <div class="mark">ÉM</div>
+            <p>Édesmentes Cukrászda</p>
+          </a>
+          <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+          </div>
+
+        <nav>
+            <a href="index.html" class="aktiv">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="cukraszaink.html">Cukrászaink</a>
+            <a href="rendeles.html">Rendelés</a>
+            <a href="kviz.html">Kvíz</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+        </div>
+    </header>
+    <section class="hatter">
+      <section class="bemutatkozas">
+        <div class="bemutatkozas1">
+          <h1>Édes pillanatok, glutén nélkül</h1>
+          <p>Kézzel készült, gluténmentes sütemények, torták és desszertek</p>
+          <p>Nézd meg heti ajánlatunkat vagy rendelj előre</p>
+          <a class="heti" href="hetiajanlat.html">Mutasd a heti ajánlatot</a>
+        </div>
+      </section>
+
+      <section id="rolunk" class="section">
+        <h2>Rólunk</h2>
+        <p>Szeretettel köszöntünk az Édesmentes Cukrászdában, ahol a szenvedély és a szakértelem találkozik az ételérzékenységgel élők igényeivel. 2018-as megalapításunk óta az a legfőbb célunk, hogy minden vendégünk gondtalanul, teljes biztonságban élvezhesse a legfinomabb desszerteket. Tudjuk, hogy a gluténkerülés sokak számára elengedhetetlen életmód vagy egészségügyi szükséglet. Éppen ezért, kínálatunkban minden egyes finomság teljes mértékben gluténmentesen készül, így elfelejtheted az aggódást a keresztszennyeződés miatt. Cukrászdahelyiségünk kialakításakor is a legszigorúbb előírásokat tartottuk be, hogy garantálhassuk a 100%-os gluténmentességet.
+
+A titkunk a minőségi alapanyagokban rejlik: csak gondosan válogatott, prémium minőségű, természetes összetevőkkel dolgozunk. A gluténmentes lisztkeverékektől a friss gyümölcsökig és a minőségi csokoládékig minden arra szolgál, hogy termékeink ne csak biztonságosak, de ízvilágukban is vetekedjenek a hagyományos desszertekkel. Fontos számunkra a szeretet és az odafigyelés is: minden egyes süteményt, tortát és kekszet gondosan, elkötelezetten sütünk. Hiszünk abban, hogy a gondoskodás sütés közben is hozzáad az élményhez, és minden falat felejthetetlen legyen. Nálunk az édes élmény nem luxus, hanem természetes alapjog. Fedezd fel kínálatunkat, és győződj meg róla, hogy a biztonságos desszertezés ízletes és felejthetetlen élmény lehet!</p>
+      </section> 
+    </section>
+<script>
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.querySelector("nav").classList.toggle("open");
+});
+</script>
+
+</body>
+<footer>
+      © 2025 Édesmentes Cukrászda — Minden jog fenntartva
+</footer>
+</html>

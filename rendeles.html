@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="projektminta2.css">
+</head>
+
+<body>
+
+<header>
+    <div class="headercontainer">
+        <a href="index.html" class="logo">
+            <div class="mark">ÉM</div>
+            <p>Édesmentes Cukrászda</p>
+        </a>
+        <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+        </div>
+
+        <nav>
+            <a href="projektminta2.html">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="cukraszaink.html">Cukrászaink</a>
+            <a href="rendeles.html" class="aktiv">Rendelés</a>
+            <a href="kviz.html">Kvíz</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+    </div>
+</header>
+
+<section id="rendeles" class="section">
+    <h2>Rendelés & Asztalfoglalás</h2>
+    <p class="muted">Előrendeléshez használd az alábbi űrlapot vagy írj nekünk e-mailt.</p>
+
+    <div class="contact">
+        <div>
+            <form id="mainForm" onsubmit="return false;" action="mailto:info@edesmentes.hu" method="post">
+
+                <label for="vezeteknev">Vezetéknév:</label>
+                <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Vezetéknév">
+
+                <label for="keresztnev">Keresztnév:</label>
+                <input type="text" id="keresztnev" name="keresztnev" placeholder="Keresztnév">
+
+                <label for="telefon">Telefonszám:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+36 20 123 4567">
+
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" placeholder="valaki@pelda.hu">
+
+                <label for="termek">Kosár azonosítód</label>
+                <textarea id="termek" name="termek" rows="4" placeholder="Kosár azonosítód:"></textarea>
+
+                <label for="megye">Kerület:</label>
+                <select id="megye" name="megye">
+                    <option value="b1">Budapest, I. kerület</option>
+                    <option value="b2">Budapest, II. kerület</option>
+                    <option value="b3">Budapest, III. kerület</option>
+                    <option value="b4">Budapest, IV. kerület</option>
+                    <option value="b5">Budapest, V. kerület</option>
+                    <option value="b6">Budapest, VI. kerület</option>
+                    <option value="b7">Budapest, VII. kerület</option>
+                    <option value="b8">Budapest, VIII. kerület</option>
+                    <option value="b9">Budapest, IX. kerület</option>
+                    <option value="b10">Budapest, X. kerület</option>
+                    <option value="b11">Budapest, XI. kerület</option>
+                    <option value="b12">Budapest, XII. kerület</option>
+                    <option value="b13">Budapest, XIII. kerület</option>
+                    <option value="b14">Budapest, XIV. kerület</option>
+                    <option value="b15">Budapest, XV. kerület</option>
+                    <option value="b16">Budapest, XVI. kerület</option>
+                    <option value="b17">Budapest, XVII. kerület</option>
+                    <option value="b18">Budapest, XVIII. kerület</option>
+                    <option value="b19">Budapest, XIX. kerület</option>
+                    <option value="b20">Budapest, XX. kerület</option>
+                    <option value="b21">Budapest, XXI. kerület</option>
+                    <option value="b22">Budapest, XXII. kerület</option>
+                    <option value="b23">Budapest, XXIII. kerület</option>
+                </select>
+
+                <p class="rendelesinfo">*Előrendelés csak Budapest kerületein belül lehetséges.</p>
+
+                <label for="asztalfoglalas">Asztalfoglalás:</label>
+                <input type="date" id="asztalfoglalas" name="asztalfoglalas">
+
+                <div class="form-group checkbox-group">
+                    <label for="terms">Elfogadom az adatvédelmi nyilatkozatot</label>
+                    <input type="checkbox" id="terms" name="terms_accepted">
+                </div>
+                <div class="form-group checkbox-group">
+                   <label for="newsletter">Feliratkozok a hírlevélre</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
+
+                <div id="form-errors"></div>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- JAVASCRIPT -->
+<script src="validator.js"></script>
+<script>
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.querySelector("nav").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

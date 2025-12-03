@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <link rel="stylesheet" href="projektminta2.css">
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+          <a href="index.html" class="logo">
+        
+            <div class="mark">ÉM</div>
+            <p>Édesmentes Cukrászda</p>
+          </a>
+          <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+          </div>
+
+        <nav>
+            <a href="index.html">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+            <a href="galeria.html" class="aktiv">Galéria</a>
+            <a href="cukraszaink.html">Cukrászaink</a>
+            <a href="rendeles.html">Rendelés</a>
+            <a href="kviz.html">Kvíz</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </nav>
+        </div>
+    </header>
+
+<h1>Galéria</h1>
+
+<h2 id="sutik">Sütemények</h2>
+<div class="gallery">
+    <div class="item"><img src="képek/malnamousse.png"><p>Kézműves málna mousse</p></div>
+    <div class="item"><img src="képek/csokitorta.jpg"><p>Csokoládé torta szelet</p></div>
+    <div class="item"><img src="képek/citromtorta.jpg"><p>Citromos pite (mini)</p></div>
+    <div class="item"><img src="képek/diosretes.jpg"><p>Diós rétes</p></div>
+    <div class="item"><img src="képek/repatorta.jpg"><p>Répatorta</p></div>
+</div>
+
+<h2 id="tortak">Torták</h2>
+<div class="gallery">
+    <div class="item"><img src="képek/eperkrem.jpg"><p>Eperkrém torta</p></div>
+    <div class="item"><img src="képek/dobostorta.jpg"><p>Dobostorta</p></div>
+    <div class="item"><img src="képek/citromjoghurttorta.jpg"><p>Citromos joghurt torta</p></div>
+    <div class="item"><img src="képek/mogyorokremtorta.jpg"><p>Mogyorókrém torta</p></div>
+    <div class="item"><img src="képek/malnapisztacia.jpg"><p>Málnás–pisztáciás sajttorta</p></div>
+</div>
+
+<h2 id="kekszek">Kekszek</h2>
+<div class="gallery">
+    <div class="item"><img src="képek/csokiskeksz.jpg"><p>Amerikai csokis keksz</p></div>
+    <div class="item"><img src="képek/zabpehely.jpg"><p>Zabpelyhes–fahéjas keksz</p></div>
+    <div class="item"><img src="képek/mandulas.jpg"><p>Mandulás keksz</p></div>
+    <div class="item"><img src="képek/aszalt.jpg"><p>Aszalt gyümölcsös keksz</p></div>
+    <div class="item"><img src="képek/redvelvet.jpg"><p>Red velvet keksz</p></div>
+</div>
+
+<h2 id="italok">Italok</h2>
+<div class="gallery">
+    <div class="item"><img src="képek/kave.jpg"><p>Frissen őrölt kávé</p></div>
+    <div class="item"><img src="képek/matcha.jpg"><p>Matcha latte</p></div>
+    <div class="item"><img src="képek/smoothie.jpg"><p>Gyümölcs smoothie</p></div>
+    <div class="item"><img src="képek/limonade.jpg"><p>Házi limonádé</p></div>
+    <div class="item"><img src="képek/forrocsoki.jpg"><p>Forró csoki</p></div>
+</div>
+<script>
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.querySelector("nav").classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

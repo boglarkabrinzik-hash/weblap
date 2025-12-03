@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="projektminta2.css">
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+          <a href="index.html" class="logo">
+        
+            <div class="mark">ÉM</div>
+            <p>Édesmentes Cukrászda</p>
+          </a>
+          <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+          </div>
+
+        <nav>
+            <a href="index.html">Rólunk</a>
+            <a href="termekek.html">Termékek</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="cukraszaink.html">Cukrászaink</a>
+            <a href="rendeles.html">Rendelés</a>
+            <a href="kviz.html">Kvíz</a>
+            <a href="kapcsolat.html" class="aktiv">Kapcsolat</a>
+        </nav>
+        </div>
+    </header>
+    <div class="kapcsolat">
+        <div class="kapcsolatszoveg">
+            <h2>Cím:</h2>
+            <p>1092, Budapest, Ráday utca 20.</p>
+            <h2>Nyitvatartás:</h2>
+                <p>Hétfő: 9:30-17:00</p>
+                <p>Kedd: 9:30-17:00</p>
+                <p>Szerda: 9:30-17:00</p>       
+                <p>Csütörtök: 9:30-17:00</p>
+                <p>Péntek: 9:30-17:00</p>
+                <p>Szombat: 10:00-18:00</p>
+    
+       
+            <h2>Elérhetőségek:</h2>
+            <p>Telefon: +36 20 123 4567</p>
+            <p>E-mail: info@edesmentes.hu</p>
+        </div>
+        <div class="terkep">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.153119223379!2d19.061271375381402!3d47.486930396235074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc5a031784b9%3A0xc3d6bb028fec89b5!2sBudapest%2C%20R%C3%A1day%20u.%2020%2C%201092!5e0!3m2!1shu!2shu!4v1763909425765!5m2!1shu!2shu"
+                allowfullscreen=""
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    
+    
+
+
+ 
+<script>
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.querySelector("nav").classList.toggle("open");
+});
+</script>
+ 
+</body>
+</html>
